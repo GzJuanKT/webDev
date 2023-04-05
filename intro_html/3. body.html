@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Juan Ramos">
+    <meta name="description" content="Descr pag">
+    <meta charset="UTF-8">
+    <title>BODY</title>
+  <link rel="icon" href="img/new-ig-icon-1.webp">
+</head>
+<body>
+  <!-- Formularios: -->
+  <center>
+    <h3>Formulario</h3>
+    <form action="">
+      <label for="correo">Email</label>
+      <input id="correo" type="email" placeholder="Entrada de correo" value="" required>
+
+      <br><br>
+      <label for="texto">Nickname</label>
+      <input id="texto" type="text" placeholder="Entrada de nickname" value="" required>
+
+      <br><br>
+
+      <label for="texto2">Password</label>
+      <input id="texto2" type="password" placeholder="Entrada de password" value="" required>
+
+      <br><br>
+      <select name="" id="">
+        <option value="">Opcion 1</option>
+        <option value="">Opcion 2</option>
+        <option value="">Opcion 3</option>
+      </select>
+      
+      <br><br>
+
+      <input type="checkbox" id="Rojo"><label for="rojo">Rojo</label>
+      <input type="checkbox" id="Amarillo"><label for="Amarillo">Amarillo</label>
+      <input type="checkbox" id="Azul"><label for="Azul">Azul</label>
+
+      <br><br>
+
+      <input type="radio" id="Blanco" name="radio" checked><label for="Blanco">Blanco</label>
+      <input type="radio" id="Negro" name="radio"><label for="Negro">Negro</label>
+
+      <br><br>
+      <input type="submit" value="Enviar Formulario">
+
+
+    </form>
+  </center> <!-- Me permite centrar algo en la pag. -->
+
+
+  <!-- los divs son divisiones... -->
+    <header>
+      <div id="logotipoHeader">Logotipo</div>
+      <!-- El atributo "id" se utiliza para identificar un elemento único en la página.
+        Cada identificador debe ser único y no se puede repetir en la misma página. 
+        Se usa para seleccionar un elemento específico a través de CSS o JavaScript. -->
+    </header>
+
+    <nav>Navegacion</nav>
+
+    <section>Seccion</section>
+
+    <aside>
+      <div class="noticias">Noticia 1</div>
+      <div class="noticias">Noticia 2</div>
+      <div class="noticias">Noticia 3</div>
+      <!-- El atributo "class" se utiliza para identificar elementos que comparten una
+        característica común en la página. Un mismo elemento puede tener varias clases,
+        y varias elementos pueden compartir la misma clase. Se usa para aplicar estilos
+        a un grupo de elementos. -->
+    </aside>
+
+    <article>Articulos</article>
+
+    <h1>Body</h1> <!-- size van del 1 al 6-->
+
+    <p>Este es mi <br> Parrafo.</p>
+
+    <hr> <!-- Me permite hace una linea divisora -->
+
+    <a href="2.%20head.html">vinculo</a>
+    <!-- BR solo se usa en parrafos para dar salto de linea-->
+
+    <figure>
+      <img src="img/new-ig-icon-1.webp" alt="imagenIg">
+      <!--Etiqueta para agregar imagenes-->
+    </figure>
+    <figcaption>Pie de pagina a la imagen</figcaption>
+
+    <ol> <!--OL son listas organizadas.-->
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ol>
+
+    <ul> <!---Lista no organizada-->
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ul>
+
+    <table border="2"> <!-- Tabla -->
+      <thead> <!-- Head de la tabla -->
+      <tr> <!-- Filas -->
+        <th>MES</th> <!-- Columna -->
+        <th>AHORRO</th>
+      </tr>
+    </thead>
+
+    <tbody> <!-- Body de la tabla -->
+      <tr> <!-- Filas -->
+        <td>Enero</td> <!-- Columna -->
+        <td>$100</td>
+      </tr>
+      <tr> <!-- Filas -->
+        <td>Febrero</td> <!-- Columna -->
+        <td>$300</td>
+      </tr>
+    </tbody>
+    </table>
+
+    <h1>Resultados del examen</h1>
+    <p>Carlos: <meter value="94" min="0" max="100" high="90"></p>
+    <p>Andres: <meter value="60" min="0" max="100" high="90"></meter></p>
+    <p>Ana: <meter value="85" min="0" max="100" high="90"></meter></p>
+    <p>Pedro: <meter value="45" min="0" max="100" high="90"></meter></p>
+
+    <h2>Resultados de Ventas</h2>
+    <p>Enero: <progress value="94" min="0" max="100"></progress> </p>
+    <p>Febrero: <progress value="60" min="0" max="100"></progress> </p>
+    <p>Febrero: <progress value="85" min="0" max="100"></progress> </p>
+    <p>Abril: <progress value="45" min="0" max="100"></progress> </p>
+
+
+    <audio src="audio/y2mate.com - Eladio Carrión  Padre Tiempo Visualizer  3MEN2 KBRN.mp3" controls loop preload="metadata"></audio>
+      <!-- Ogg VORBIS .ogg-->
+      <!-- Mp3 .mp3 -->
+      <!-- WAV .wav -->
+      <!-- ACC .m4a, .m4b, .m4p, .mp4, .acc --> 
+
+    <video src="video/y2mate.com - backyardigans intro espanol latino_v720P.mp4" controls loop width="500" height="200"></video>
+      <!-- THEORA OGG .ogg -->
+      <!-- MP4 .mp4 -->
+      <!-- WEBM .webm -->
+
+    <!-- Video de YouTube-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zZqIYvdZg0s"
+     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+      encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+    
+    <!-- Revista de Calameo -->
+    <div style="text-align:center;"><div style="margin:8px 0px 4px;"><a href="https://www.calameo.com/books/00335492073248cb13ea6"
+       target="_blank">Epicur Octubre 2016</a></div><iframe src="//v.calameo.com/?bkcode=00335492073248cb13ea6" width="300" height="194"
+        frameborder="0" scrolling="no" allowtransparency allowfullscreen style="margin:0 auto;"></iframe><div style="margin:4px 0px 8px;">
+          <a href="http://www.calameo.com/">Publish at Calameo</a></div></div>
+
+    <!-- TikTok -->
+    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@valeryecheverriaa/video/7217116924239531270" data-video-id="7217116924239531270"
+     style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@valeryecheverriaa"
+       href="https://www.tiktok.com/@valeryecheverriaa?refer=embed">@valeryecheverriaa</a> El último pesa 300 libras 😱  <a title="gordos"
+        target="_blank" href="https://www.tiktok.com/tag/gordos?refer=embed">#gordos</a> <a title="fat" target="_blank" 
+        href="https://www.tiktok.com/tag/fat?refer=embed">#fat</a> <a title="competition" target="_blank" href="https://www.tiktok.com/tag/competition?refer=embed">#competition</a>
+         <a title="royalcaribbean" target="_blank" href="https://www.tiktok.com/tag/royalcaribbean?refer=embed">#royalcaribbean</a> <a target="_blank"
+          title="♬ sonido original - Val Echeverria" href="https://www.tiktok.com/music/sonido-original-7217116933950343942?refer=embed">♬ sonido original - Val Echeverria</a>
+         </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+    
+    <!-- Mapa google maps -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209171.29850219883!2d-75.79213149215317!3d10.431199554729787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef62f48f4d35abd%3A0x525bc49c11e52805!2sKFC%20Ciudad%20Amurallada!5e0!3m2!1ses-419!2sco!4v1680551824951!5m2!1ses-419!2sco" 
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    <!-- Pagina el Colombiano -->
+    <iframe src="https://www.elcolombiano.com/"width="850" height="600" scrolling="auto" frameborder="0" AllowTransparency="True"></iframe>
+    <footer>
+      <p>&copy; 2023 Nombre de la empresa. Todos los derechos reservados.</p>
+      <p><a href="politica-de-privacidad.html">Política de privacidad</a> | <a href="terminos-y-condiciones.html">Términos y condiciones</a></p>
+      <p>Diseñado por <a href="https://tu-website.com">Tu Nombre</a></p>
+    </footer>
+    
+</body>
+</html>

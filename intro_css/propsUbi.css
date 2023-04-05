@@ -1,0 +1,353 @@
+/*
+    La propiedad position me ayuda a ubicar las cajas dentro de la diagramacion web
+    o el flujo de nodos (todas las etiquetas del body del html)
+*/
+
+/* El '*' es el selector universal. Lo recomendable primero es formatear el estilo de la
+    pagina por defecto.
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    /* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
+}
+
+body{
+    background: rgb(247, 181, 56);
+}
+
+header{
+    /* Si quiero CENTRAR una CAJA PRINCIPAL debo hacer estas 2 cosas: position: relative y margin: auto */
+    position: relative;
+    margin: auto; /* maneja 2 parametros top y left, y se trabaja con px. puedo hacer margin: 20px 30px */
+    width: 1000px;
+    height: 120px;
+    /* background: rgb(10, 54, 157); */
+}
+
+#logotipo{
+    /* La POSICION para CAJAS INTERNAS ya no es relativa sino ABSOLUTA.
+        Esto nos permite ubicar una caja interna dentro de una caja principal
+    */
+
+    /* NO PUEDE estar TOP y BOTTOM en el mismo selector si tenemos posicion ABSOLUTA.
+        Aqui lo hago SOLO para DEMOSTRAR los EJES.
+    */
+
+    position: absolute;
+    top: 42px;
+    left: 30px;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 60px;
+    /* background:rgb(146, 180, 244); */
+    /* Propiedades de texto */
+    font-family: 'Cinzel Decorative', cursive;
+    color: black;
+    font-size: 50px; /* size de la fuente */
+    text-align: center; /* El texto este ubicado dentro de la caja a nivel central*/
+    line-height: 60px; /* Para alinear a nivel vertical, de acuerdo a la altura de la caja para que quede en el centro */
+}
+
+.iconos{
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    /* background:rgb(255, 255, 255); */
+    border: 2px solid black;
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
+    line-height: 45px;
+    color: white;
+}
+
+#ico1{
+    background: rgb(195, 47, 39);
+    top: 45px;
+    right: 20px;
+}
+
+#ico2{
+    background: rgb(216, 87, 42);
+    top: 45px;
+    right: 80px;
+}
+
+#ico3{
+    background: rgb(219, 124, 38);
+    top: 45px;
+    right: 140px;
+}
+
+nav{
+    /*
+        Al tener position: relative, el margen se puede trabajar de la siguiente forma:
+        margin: auto; Se centrara en vertical y horizontalmente
+        margin: 20px 30px; Maneja: 2 valores vertical y horizontal
+        margin: 20px 40px 50px 12px; Maneja 4 valores: Top, right, bottom, left
+            - otro ejemplo: solo quiero un margen en la izquierda:
+                margin: 0px 0px 0px 20px;
+            - otra forma:
+                margin-left: 20px;
+        margin: 20px; solo maneja 1 valor y utilizara 20 px para vertical y horizontal
+    */
+    position: relative;
+    margin: 20px auto; /* 20px en vertical: top y bottom. auto (central) en horizontal: right y left */
+    width: 1000px;
+    height: 48px;
+    /* background: rgb(68, 114, 202); 
+        Aqui quito el background del nav para que solo este el color de los botones del nav
+    */
+}
+
+.botones{
+    /* La propiedad float hace flotar el listado (el cual esta en vertical), lo va a 
+        hacer flotar a nivel horizontal.
+    */
+    float: left;
+    width: 190px;
+    height: 48px;
+    margin: 0 3px;
+    background:rgb(216, 87, 42);
+    border: 1.4px solid black;
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
+    line-height: 50px;
+    color: black; 
+}
+
+#top{
+    position: relative;
+    margin: 20px auto;
+    width: 1000px;
+    height: 192px;
+    /* background: rgb(94, 124, 226); */
+}
+
+#top ul{
+    width: 1010px;
+    height: 192px;
+    /* background: rebeccapurple; */
+}
+
+/* CSS de las listas del top
+.blocks{
+    float: left;
+    width: 329px;
+    height: 192px;
+    margin: 2px;
+    background: white;
+}
+
+Tambien podemos hacerlo de esta forma que seria seleccion de ruta: 
+*/
+
+#top ul li{
+    float: left;
+    width: 325px;
+    height: 192px;
+    margin-right: 11.40px;
+    /* background: rgb(10, 54, 157); */
+    /* font-family: 'Cinzel Decorative', cursive; */
+    text-align: center;
+}
+
+/* Seleccionamos las imagenes de las cajas del top */
+#top ul li img{
+    border-radius: 100%;
+    height: 100px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.8);
+}
+
+#top ul li h1{
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 30px;
+}
+
+#top ul li p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    margin: 5px;
+}
+
+div#barraSeparadora{
+    position: relative;
+    margin: 70px auto 0 auto;
+    padding: 3px;
+    width: 1000px;
+    height: 30px;
+    /* background: rgb(219, 124, 38); */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+div#barraSeparadora p {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 13px;
+    margin: 5px;
+    color: black;
+    cursor: pointer;
+}
+
+section{
+    position: relative;
+    margin: -60px auto;
+    width: 1000px;
+    height: 453px;
+    /* background:rgb(255, 255, 255);  */
+}
+
+aside#izquierda{
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 200px;
+    height: 453px;
+    /* background:rgb(146, 180, 244); */
+}
+
+aside#izquierda ul li h3{
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+aside#izquierda ul li p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    padding: -10px;
+    line-height: 15px;
+    /* text-align: justify; */
+    /* margin: 5px 20px; */
+}
+
+aside#izquierda ul li{
+    /* background: rgb(195, 47, 39); */
+    padding: 15px; /* el padding es espaciado interno */
+    margin: 2px 10px; /* espacio externo. */
+    /* line-height: 20px; */
+    /* Propiedades de Lista: */
+    list-style: disc;
+    /* list-style-position: inside; */
+    /* list-style-image: url(img/outline_done_black_24dp.png); */
+}
+
+article{
+    position: absolute;
+    left: 200px;
+    top: 0;
+    width: 600px;
+    height: 453px;
+    /* background:rgb(206, 204, 204); */
+}
+
+article h1{
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 40px;
+    /* margin: 20px; */
+    margin-top: 100px;
+}
+
+article p img{
+    float: left;
+    margin-right: 14px;
+    border-radius: 100%;
+    width: 230px;
+    height: 230px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.9);
+}
+
+article p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12.7px;
+    text-align: justify;
+    margin: 5px 20px;
+}
+
+aside#derecha{
+    position: absolute;
+    right: 0;
+    top: 100px;
+    width: 200px;
+    height: 453px;
+    /* background:rgb(146, 180, 244); */
+}
+
+/* Propiedades formulario */
+aside#derecha h2{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: rgb(219, 124, 38);
+    color: black;
+    font-family: 'Cinzel Decorative', cursive;
+    margin-bottom: 5px;
+    border: 2px solid black;
+}
+
+/* seleccion x atributo */
+aside#derecha input[type="text"]{
+    padding: 10px;
+    margin: 5px 0;
+    width: 177px;
+    background-image: url(img/4092564-about-mobile-ui-profile-ui-user-website_114033.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 30px;
+}
+
+aside#derecha input[type="email"]{
+    padding: 10px;
+    margin: 5px 0;
+    width: 177px;
+    background-image: url(img/mail_icon-icons.com_72317.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 30px;
+}
+
+aside#derecha input[type="password"]{
+    padding: 10px;
+    margin: 5px 0;
+    width: 177px;
+    background-image: url(img/password_protect_secure_security_privacy_lock_padlock_icon_219328.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 30px;
+}
+
+#derecha form input[type="checkbox"] {
+    float: left;
+    margin: 5px 10px auto auto;
+    /* margin-right: 10px; */
+    /* margin-top: 10px; */
+}
+
+#derecha form label {
+    display: flex;
+    margin-top: 3px;
+}
+
+aside#derecha input[type="submit"]{
+    padding: 10px;
+    margin: 10px 0;
+    width: 200px;
+    background: rgb(219, 124, 38);
+}
+
+footer{
+    position: relative;
+    margin: 120px auto auto auto;
+    width: 1000px;
+    height: 70px;
+    /* background: rgb(195, 47, 39); */
+}
+
+footer p{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 12px;
+    line-height: 17px;
+}

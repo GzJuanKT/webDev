@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>propFormas</title>
+    <style>
+        body{
+            background-color: rgb(213, 236, 236);
+        }
+        header{
+            background: rgb(160, 211, 228);
+            width: 1000px;
+            height: 200px;
+            margin: 20px;
+            border: 4px solid rgb(2, 97, 160);
+            padding: 20px; 
+            /* 3 parametros: medida de borde, tipo de borde, color del borde */
+        }
+        #logo img{
+            width: 55px;
+            height: 50px;
+            margin: 20px;
+        }
+
+        #submitBtn{
+            height: 30px;
+            width: 80px;
+            border: 2px solid rgb(2, 97, 160);
+            border-radius: 30%;
+        }
+
+        #inputTweet{
+            /* El margen interno se escribe como padding */
+            padding: 10px;
+            height: 40px;
+            width: 250px;
+            text-align: center;
+            border: 2px solid rgb(2, 97, 160);
+        }
+
+        #formulario{
+            padding: 30px;
+            text-align: center;
+            max-width: 500px; /* ajusta el ancho máximo del formulario */
+            margin: 0 auto; /* centra el formulario horizontalmente */
+            margin-top: 20px; /* agrega un margen superior para separar el formulario del logo */
+        }
+
+        #divBtnTweet{
+            padding: 30px;
+            padding-left: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Las propiedades de forma son las que nos permiten:
+        - dar tamaño
+        - dar espacio
+        - dar color
+    a las cajas del html.
+    -->
+    <header>
+        <div id="logo">
+            <!-- <img src="img/Twitter_Logo_new.png" alt="logoTW"> -->
+        </div>
+        
+        <!-- <center> -->
+        <div id="formulario">
+            <form action="">
+                <input id="inputTweet" type="text" placeholder="¿Qué está pasando?" value="" required>
+                <div id="divBtnTweet">
+                    <input id="submitBtn" type="submit" value="Twittear">
+                </div>
+            </form>
+            <!-- </center> -->
+        </div>
+    </header>
+</body>
+</html>
