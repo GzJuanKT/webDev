@@ -1,0 +1,255 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+
+    /* Esta propiedad ignora el borde que tenga, es decir: 
+        Asegura que el relleno y el borde estan incluidos en el ancho
+        total y la altura total de los elementos.
+    */
+    box-sizing: border-box;
+}
+
+.contenedor{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+.fila{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    clear: both;
+    display: table;
+}
+
+/* Quiero que todas los clases que inicien con 'col-' tengan
+    las siguientes propiedades en comun.
+*/
+[class *= 'col-']{
+    float: left;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+/* los @media query son pedazos de codigos que activaran 
+    si se cumple con una funcion dada.
+*/
+
+/* PANTALLA DE ESCRITORIO GRANDE - LARGE (lg) */
+
+@media(min-width: 1200px){
+    .col-lg-12{
+        width: 100%;
+        text-align: center;
+    }
+
+    .col-lg-9{
+        width: 75%;
+        text-align: center;
+    }
+
+    .col-lg-8{
+        width: 66.6666667%;
+        text-align: center;
+    }
+
+    .col-lg-7{
+        width: 58.3333333%;
+        text-align: center;
+    }
+
+    .col-lg-6{
+        width: 50%;
+        text-align: center;
+    }
+
+    .col-lg-5{
+        width: 41.6666667%;
+        text-align: center;
+    }
+
+    .col-lg-4{
+        width: 33.33333333%; /* Cuantos decimales usar? 8 es recomendable. */
+        text-align: center;
+    }
+
+    .col-lg-3{
+        width: 25%;
+        text-align: center;
+    }
+
+    .col-lg-2{
+        width: 16.6666667%;
+        text-align: center;
+    }
+
+    .col-lg-1{
+        width: 8.33333333%;
+        text-align: center;
+    }
+}
+
+/* PANTALLA DE ESCRITORIO MEDIANO - md */
+@media(max-width: 1199px) and (min-width: 992px){
+    .col-md-12{
+        width: 100%;
+        text-align: center;
+    }
+
+    .col-md-9{
+        width: 75%;
+        text-align: center;
+    }
+
+    .col-md-8{
+        width: 66.6666667%;
+        text-align: center;
+    }
+
+    .col-md-7{
+        width: 58.3333333%;
+        text-align: center;
+    }
+
+    .col-md-6{
+        width: 50%;
+        text-align: center;
+    }
+
+    .col-md-5{
+        width: 41.6666667%;
+        text-align: center;
+    }
+
+    .col-md-4{
+        width: 33.33333333%; /* Cuantos decimales usar? 8 es recomendable. */
+        text-align: center;
+    }
+
+    .col-md-3{
+        width: 25%;
+        text-align: center;
+    }
+
+    .col-md-2{
+        width: 16.6666667%;
+        text-align: center;
+    }
+
+    .col-md-1{
+        width: 8.33333333%;
+        text-align: center;
+    }
+}
+
+/* PANTALLA SMALL o TABLET - sm */
+@media(max-width: 991px) and (min-width: 768){
+    .col-sm-12{
+        width: 100%;
+        text-align: center;
+    }
+
+    .col-sm-9{
+        width: 75%;
+        text-align: center;
+    }
+
+    .col-sm-8{
+        width: 66.6666667%;
+        text-align: center;
+    }
+
+    .col-sm-7{
+        width: 58.3333333%;
+        text-align: center;
+    }
+
+    .col-sm-6{
+        width: 50%;
+        text-align: center;
+    }
+
+    .col-sm-5{
+        width: 41.6666667%;
+        text-align: center;
+    }
+
+    .col-sm-4{
+        width: 33.33333333%; /* Cuantos decimales usar? 8 es recomendable. */
+        text-align: center;
+    }
+
+    .col-sm-3{
+        width: 25%;
+        text-align: center;
+    }
+
+    .col-sm-2{
+        width: 16.6666667%;
+        text-align: center;
+    }
+
+    .col-sm-1{
+        width: 8.33333333%;
+        text-align: center;
+    }
+}
+
+/* PANTALLA EXTRA-SMALL o CELULARES  - xs */
+@media(max-width: 767px){
+    .col-xs-12{
+        width: 100%;
+        text-align: center;
+    }
+
+    .col-xs-9{
+        width: 75%;
+        text-align: center;
+    }
+
+    .col-xs-8{
+        width: 66.6666667%;
+        text-align: center;
+    }
+
+    .col-xs-7{
+        width: 58.3333333%;
+        text-align: center;
+    }
+
+    .col-xs-6{
+        width: 50%;
+        text-align: center;
+    }
+
+    .col-xs-5{
+        width: 41.6666667%;
+        text-align: center;
+    }
+
+    .col-xs-4{
+        width: 33.33333333%; /* Cuantos decimales usar? 8 es recomendable. */
+        text-align: center;
+    }
+
+    .col-xs-3{
+        width: 25%;
+        text-align: center;
+    }
+
+    .col-xs-2{
+        width: 16.6666667%;
+        text-align: center;
+    }
+
+    .col-xs-1{
+        width: 8.33333333%;
+        text-align: center;
+    }
+}
