@@ -233,6 +233,8 @@ aside#der input[type="submit"]{
     font-family: 'Cinzel Decorative', cursive;
     font-size: 15px;
     width: 100%;
+    color: black;
+    border: 2px solid black;
 }
 
 aside#der input[type="submit"]:hover{
