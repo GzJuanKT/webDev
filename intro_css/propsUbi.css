@@ -17,6 +17,34 @@ body{
     background: rgb(247, 181, 56);
 }
 
+#chatBot{
+    /* El valor de fixed nos permite tomar una caja y pegarla a la pantalla */
+    position: fixed;
+    width: 200px;
+    height: 40px;
+    background: rgb(216, 87, 42);
+    bottom: 0;
+    left: 20px;
+    border: 2px solid black;
+    color: black;
+    text-align: center;
+    line-height: 40px;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 17px;
+    border-radius: 20px 20px 0 0;
+    cursor: pointer;
+
+    /* z-index es la propiedad que nos permite manejar las cajas en tema de profundidad
+        por defecto todas las cajas vienen en indice 0.
+    */
+    z-index: 1;
+}
+
+#chatBot:hover{
+    background: rgba(216, 87, 42, 0.7);
+
+}
+
 header{
     /* Si quiero CENTRAR una CAJA PRINCIPAL debo hacer estas 2 cosas: position: relative y margin: auto */
     position: relative;
@@ -119,6 +147,17 @@ nav{
     color: black; 
 }
 
+/* Hago una pseudoclase: hover. Significa cuando el mouse pase por el boton sucedera algo. */
+a .botones:hover{
+    background: rgba(216, 87, 42, 0.5);
+
+}
+
+a .botones:active{
+    /* background: rgba(200, 87, 42, 0.7); */
+    background: rgba(184, 29, 21, 0.75);
+}
+
 #top{
     position: relative;
     margin: 20px auto;
@@ -189,12 +228,12 @@ div#barraSeparadora p {
     font-size: 13px;
     margin: 5px;
     color: black;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 section{
     position: relative;
-    margin: -60px auto;
+    margin: 3px auto;
     width: 1000px;
     height: 453px;
     /* background:rgb(255, 255, 255);  */
@@ -203,7 +242,7 @@ section{
 aside#izquierda{
     position: absolute;
     left: 0;
-    top: 100px;
+    top: 55px;
     width: 200px;
     height: 453px;
     /* background:rgb(146, 180, 244); */
@@ -234,9 +273,9 @@ aside#izquierda ul li{
 }
 
 article{
-    position: absolute;
+    position: relative;
     left: 200px;
-    top: 0;
+    top: 6px;
     width: 600px;
     height: 453px;
     /* background:rgb(206, 204, 204); */
@@ -245,8 +284,8 @@ article{
 article h1{
     font-family: 'Cinzel Decorative', cursive;
     font-size: 40px;
-    /* margin: 20px; */
-    margin-top: 100px;
+    margin: 20px;
+    padding: 3px 0px;
 }
 
 article p img{
@@ -268,7 +307,7 @@ article p{
 aside#derecha{
     position: absolute;
     right: 0;
-    top: 100px;
+    top: 70px;
     width: 200px;
     height: 453px;
     /* background:rgb(146, 180, 244); */
@@ -280,7 +319,8 @@ aside#derecha h2{
     height: 50px;
     line-height: 50px;
     text-align: center;
-    background: rgb(219, 124, 38);
+    /* background: rgb(219, 124, 38); */
+    background: rgb(216, 87, 42);
     color: black;
     font-family: 'Cinzel Decorative', cursive;
     margin-bottom: 5px;
@@ -334,12 +374,18 @@ aside#derecha input[type="submit"]{
     padding: 10px;
     margin: 10px 0;
     width: 200px;
-    background: rgb(219, 124, 38);
+    background: rgb(216, 87, 42);
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 15px;
+}
+
+aside#derecha input[type="submit"]:hover{
+    background: rgba(216, 87, 42, 0.75);
 }
 
 footer{
     position: relative;
-    margin: 120px auto auto auto;
+    margin: auto auto;
     width: 1000px;
     height: 70px;
     /* background: rgb(195, 47, 39); */
